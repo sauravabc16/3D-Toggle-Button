@@ -1,0 +1,44 @@
+/*The div*/
+.button{
+  width:90px;
+  height:45px;
+  background:#2B2929;
+  position:relative;
+  border-radius:45px;
+  box-shadow: inset 0 12px 5px rgba(0,0,0,.6)
+}
+
+.button:before{
+  content:'';
+  position:absolute;
+  height: 40px;
+  width: 40px;
+  background: #C2BDBC;
+  transition: all 0.3s ease-out;
+  border-radius:45px;
+  box-shadow:inset 0 10px 10px -5px rgba(0,0,0,.40);
+  left:4px;
+  top:2.5px;
+}
+
+input[type=checkbox]:checked + .button:before{
+  left:45px;
+}
+
+input[type=checkbox]:checked + .button{
+  background: #9C64D9;
+}
+
+/*The checkbox*/
+.toggle{
+  opacity:0%;
+}
+
+/*The pointer*/
+.pointer:hover{
+  cursor:grab;
+}
+
+.pointer:active{
+  cursor:grabbing;
+}
