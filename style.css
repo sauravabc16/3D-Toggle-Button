@@ -20,7 +20,7 @@
   left:4px;
   top:2.5px;
 }
-
+/* comment */
 input[type=checkbox]:checked + .button:before{
   left:45px;
 }
